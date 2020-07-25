@@ -103,6 +103,7 @@ def mapbox_js():
 @app.route('/mapbox_gl')
 def mapbox_gl():
     route_data, waypoints = get_route_data()
+    print('route_data', route_data['geometry']['coordinates'])
 
     stop_locations = create_stop_locations_details()
 
